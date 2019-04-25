@@ -1,0 +1,22 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
+/* =============================================
+  Include Avenir Font Family
+============================================= */
+@include font-face($font-avenir-black, $base-url + 'fonts/avenir/', 'avenir-black', 'avenir-black');
+@include font-face($font-avenir-heavy, $base-url + 'fonts/avenir/', 'avenir-heavy', 'avenir-heavy');
+@include font-face($font-avenir-light, $base-url + 'fonts/avenir/', 'avenir-light', 'avenir-light');
+@include font-face($font-avenir-medium, $base-url + 'fonts/avenir/', 'avenir-medium', 'avenir-medium');
+@include font-face($font-avenir-book, $base-url + 'fonts/avenir/', 'avenir-book', 'avenir-book');
+@include font-face($font-avenir-roman, $base-url + 'fonts/avenir/', 'avenir-roman', 'avenir-roman');
+
+/* =============================================
+  Include Lucida Font Family
+============================================= */
+@include font-face($font-lucida-grande, $base-url + 'fonts/lucida-grande/', 'Lucida-Grande', 'Lucida-Grande');

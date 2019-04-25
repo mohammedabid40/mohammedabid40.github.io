@@ -1,0 +1,65 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-opensans: 'Open Sans';
+
+/// Avenir Font Family
+$font-avenir-black: 'Avenir Black';
+$font-avenir-heavy: 'Avenir Heavy';
+$font-avenir-light: 'Avenir Light';
+$font-avenir-medium: 'Avenir Medium';
+$font-avenir-book: 'Avenir Book';
+$font-avenir-roman: 'Avenir Roman';
+
+/// Lucida Grande Font Family
+$font-lucida-grande: 'Lucida Grande';
+
+/// @type List
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-avenir-black: $font-avenir-black, 'Arial Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-avenir-heavy: $font-avenir-heavy, 'Arial Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-avenir-light: $font-avenir-light, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-avenir-medium: $font-avenir-medium, 'Arial Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-avenir-book: $font-avenir-book, 'Calibri', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-avenir-roman: $font-avenir-roman, 'Calibri', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-lucida-grande: $font-lucida-grande, 'Arial Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #8a8a8a !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #EDEDED !default;
+$light-gray: #f9f9f9;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999 !default;
+$mid-gray: #979797;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444 !default;
+$dark-gray: #e2e2e2;
+$darker-gray: #939393;
+$darker-grey: #d3d3d3;
+$dodger-blue: #368aed;
+$pink-swan: #b5b5b5;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;

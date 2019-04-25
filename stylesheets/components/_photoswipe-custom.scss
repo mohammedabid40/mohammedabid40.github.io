@@ -1,0 +1,241 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the photoswipe popup
+// -----------------------------------------------------------------------------
+
+.pswp {
+  .pswp__bg {
+    background-color: rgba(0,0,0,0.92);
+  }
+  .pswp__scroll-wrap {
+    .pswp__ui {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      .pswp__top-bar {
+        background-color: transparent;
+        .pswp__counter,
+        .pswp__button--fs,
+        .pswp__button--share,
+        .pswp__button--zoom {
+          display: none;
+        }
+
+        .pswp__button--close {
+          position: fixed;
+          right: 20px;
+          top: 20px;
+          z-index: 1000;
+        }
+      }
+
+      .pswp__button--arrow--left {
+        left: 25px;
+
+        &:before {
+          background: url(../assets/images/arrow-left.png) 0 0 no-repeat;
+        }
+      }
+
+      .pswp__button--arrow--right {
+        right: 25px;
+
+        &:before {
+          background: url(../assets/images/arrow-right.png) center right no-repeat;
+        }
+      }
+
+      .pswp__caption {
+        background-color: transparent;
+        .pswp__caption__center {
+          margin-top: 10px;
+          padding: 10px 0;
+          max-width: 900px;
+          .item-content {
+            margin-bottom: 50px;
+
+            .item-text {
+              h4 {
+                margin-bottom: 16px;
+                font-family: $text-avenir-black;
+                font-size: 18px;
+                line-height: normal;
+                color: #fff;
+                .position {
+                  vertical-align: middle;
+                  font-family:  $text-avenir-light;
+                  font-size: 16px;
+                  margin-top: 46px;
+                  color: #fff;
+                }
+              }
+
+              .context {
+                p {
+                  font-family: $text-avenir-light;
+                  font-size: 12px;
+                  line-height: 18px;
+                  color: #fff;
+
+                  a {
+                    color: $dodger-blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .pswp {
+    .pswp__scroll-wrap {
+      .pswp__ui {
+        .pswp__top-bar {
+          .pswp__button--close {
+            right: 0;
+            top: 0;
+          }
+        }
+
+        .pswp__button--arrow--left {
+          left: 0;
+          z-index: 1000;
+          visibility: visible;
+        }
+
+        .pswp__button--arrow--right {
+          right: 0;
+          z-index: 1000;
+          visibility: visible;
+        }
+
+        .pswp__caption {
+          background-color: rgba(0,0,0,0.5);
+          .pswp__caption__center {
+            padding: 10px;
+
+            .item-content {
+              margin-bottom: 0;
+
+              .item-text {
+                h4 {
+                  font-size: 13px;
+                  line-height: 20px;
+
+                  .position {
+                    display: block;
+                    margin-top: 0;
+                    font-size: 13px;
+                  }
+                }
+                .context {
+                  p {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .pswp {
+    .pswp__scroll-wrap {
+      .pswp__ui {
+        .pswp__top-bar {
+          .pswp__button--close {
+            right: 0;
+            top: 0;
+          }
+        }
+
+        .pswp__button--arrow--left {
+          left: 10px;
+          visibility: visible;
+        }
+
+        .pswp__button--arrow--right {
+          right: 10px;
+          visibility: visible;
+        }
+
+        .pswp__caption {
+          background-color: rgba(0,0,0,0.5);
+          .pswp__caption__center {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .item-content {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .pswp {
+    .pswp__scroll-wrap {
+      .pswp__ui {
+        max-width: unset;
+        .pswp__top-bar {
+          .pswp__button--close {
+            right: 0;
+            top: 0;
+          }
+        }
+
+        .pswp__button--arrow--left {
+          left: 10px;
+          visibility: visible;
+        }
+
+        .pswp__button--arrow--right {
+          right: 10px;
+          visibility: visible;
+        }
+
+        .pswp__caption {
+          background-color: rgba(0,0,0,0.5);
+          .pswp__caption__center {
+            .item-content {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-height: 1081px) and (max-height: 2160px) {
+  .pswp {
+    .pswp__scroll-wrap {
+      .pswp__ui {
+        .pswp__top-bar {
+          .pswp__button--close {
+            top: 50px;
+            right: 50px;
+          }
+        }
+
+        .pswp__caption {
+          bottom: 15%;
+        }
+      }
+    }
+  }
+}
